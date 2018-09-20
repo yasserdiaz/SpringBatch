@@ -13,12 +13,11 @@ CREATE TABLE [dbo].[REPORT](
 En el archivo /src/main/resources/spring/batch/config/spring-datasource.xml
 
 Descomentar para generar la estructura de Spring Batch a nivel de base de datos.
-<!-- 
-   <jdbc:initialize-database data-source="dataSource">
-      <jdbc:script location="org/springframework/batch/core/schema-drop-sqlserver.sql" />
-      <jdbc:script location="org/springframework/batch/core/schema-sqlserver.sql" />
-   </jdbc:initialize-database>
- -->
+
+<jdbc:initialize-database data-source="dataSource">
+	<jdbc:script location="org/springframework/batch/core/schema-drop-sqlserver.sql" />
+	<jdbc:script location="org/springframework/batch/core/schema-sqlserver.sql" />
+</jdbc:initialize-database>
     
 Luego volver a comentar para no perder los datos.
 
