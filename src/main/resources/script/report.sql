@@ -1,0 +1,12 @@
+USE [ERPAPPBATCH]
+GO
+
+CREATE TABLE [dbo].[REPORT](
+	[ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[SALES] [decimal](18, 0) NULL,
+	[QUANTITY] [int] NULL,
+	[STAFF] [varchar](max) NULL,
+	[CREATED_ON] [datetime2](7) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
