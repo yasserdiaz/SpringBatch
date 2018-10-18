@@ -8,7 +8,7 @@
    <!-- allow-start-if-complete="true" si se desea repetir n veces ver de configurar parametros para no evitar repetir tareas -->
       <batch:step id="step1" allow-start-if-complete="true">
          <batch:tasklet>
-            <batch:chunk reader="cvsFileItemReader" writer="mysqlItemWriter" processor="itemProcessor" commit-interval="5" />
+            <batch:chunk reader="cvsFileItemReader" writer="sqlItemWriter" processor="itemProcessor" commit-interval="5" />
          </batch:tasklet>
       </batch:step>
    </batch:job>
@@ -27,7 +27,7 @@
          </bean>
       </property>
    </bean>
-   <bean id="mysqlItemWriter"
+   <bean id="sqlItemWriter"
 	class="org.springframework.batch.item.database.JdbcBatchItemWriter">
 	<property name="dataSource" ref="dataSource" />
 	<property name="sql">

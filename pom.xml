@@ -10,13 +10,13 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>4.3.5.RELEASE</version>
+			<version>5.1.0.RELEASE</version>
 		</dependency>
 		<!-- Spring Context Dependency For Database Transactions -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>4.3.5.RELEASE</version>
+			<version>5.1.0.RELEASE</version>
 		</dependency>
 		<!-- Spring Batch Dependency -->
 		<dependency>
@@ -28,7 +28,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>4.3.5.RELEASE</version>
+			<version>5.1.0.RELEASE</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
 		<dependency>
